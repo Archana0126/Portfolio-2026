@@ -32,22 +32,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission
-function handleSubmit(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Create mailto link
-    const mailtoLink = `mailto:archanagurav2003@gmail.com?subject=Portfolio Message from ${name}&body=From: ${email}%0D%0A%0D%0A${message}`;
-    
-    window.location.href = mailtoLink;
-    
-    // Reset form
-    document.querySelector('.contact-form').reset();
-}
-
 // Add fade-in animation on scroll
 const observerOptions = {
     threshold: 0.1,
