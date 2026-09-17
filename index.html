@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archana Gurav - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Archana Gurav</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Archana Gurav</h1>
+            <p class="subtitle">Full Stack Developer | Flutter Enthusiast | Tech Innovator</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-links">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=archanagurav2003@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/archana-gurav-a89238233/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Archana0126" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+               <a href="tel:+917387493408" title="Phone" onclick="copyPhoneFallback(event)"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-photo">
+                    <img src="assets/photograph.JPEG" alt="Archana Gurav Profile Photo" class="photo">
+                </div>
+                <div>
+                    <p>I'm a passionate full-stack developer with expertise in building scalable web and mobile applications. A 2025 engineering graduate with 9.11 CGPA from Solapur University, I combine strong technical foundations with practical, problem-solving-driven development.</p>
+                    <p>My journey in tech started with a curiosity about how things work, which evolved into a professional pursuit of creating innovative solutions. I specialize in Flutter, React, and Spring Boot, and I'm always eager to learn new technologies.</p>
+                    <p>Beyond coding, I'm passionate about open-source contributions and staying updated with the latest industry trends.</p>
+                    <div class="stats">
+                        <div class="stat-card fade-in">
+                            <h3>5+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-card fade-in">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-card fade-in">
+                            <h3>10+</h3>
+                            <p>Tech Skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-box"></i> Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Hibernate</span>
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">JDBC</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Apache Tomcat</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Eclipse</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-api"></i> APIs & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">JWT Auth</span>
+                        <span class="skill-tag">Google Chart API</span>
+                        <span class="skill-tag">Cloud Functions</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-lightbulb"></i> Core Competencies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Mobile Application Developer</h3>
+                        <p class="time"><i class="fas fa-calendar"></i> Jan 2026 - Present</p>
+                        <p><strong>Shinelife Meditech LLP</strong> | Mumbai, MH</p>
+                        <p style="margin-top: 1rem;">Developed Flutter applications integrated with Firebase for IVF laboratory equipment monitoring. Implemented in-app WiFi provisioning, serverless alerting on Cloud Functions, and interactive historical data visualization with range selection.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Junior Software Developer Intern</h3>
+                        <p class="time"><i class="fas fa-calendar"></i> Jun 2025 - Dec 2025</p>
+                        <p><strong>CTC Security Technology Services Pvt. Ltd.</strong> | Pune, MH</p>
+                        <p style="margin-top: 1rem;">Developed and maintained real-time web and mobile applications. Integrated REST APIs, contributed to live service-based features, and identified bugs to improve application performance and usability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Shivet - IVF Lab Monitoring</h3>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Cloud Functions</span>
+                        </div>
+                        <p class="project-description">Built a Flutter app for monitoring IVF laboratory equipment with product-specific live dashboards. Implemented in-app WiFi provisioning, serverless alerting on Cloud Functions, and interactive history charts with range selection for efficient data visualization.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Gym Management System</h3>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <p class="project-description">Developed a web-based system to efficiently manage gym operations including member registration, attendance tracking, membership records, payment management, and report generation for financial tracking with a responsive user interface.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Smart Traffic Investigation</h3>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">QR Code</span>
+                        </div>
+                        <p class="project-description">Built a QR-based web app to digitize vehicle document verification for traffic authorities. Users can register, upload documents, and receive encrypted QR codes. Authorities can scan and instantly access verified vehicle and driver details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-container">
+                <div class="education-card fade-in">
+                    <h3>Solapur University</h3>
+                    <p class="degree">B.Tech in Electronics & Telecommunication Engineering</p>
+                    <p class="period"><i class="fas fa-calendar"></i> Oct 2021 - May 2025</p>
+                    <p>Location: Solapur, MH</p>
+                    <span class="percentage">CGPA: 9.11</span>
+                </div>
+                <div class="education-card fade-in">
+                    <h3>Sanganeshwar College, Solapur</h3>
+                    <p class="degree">Class XII (HSC)</p>
+                    <p class="period"><i class="fas fa-calendar"></i> June 2020 - May 2021</p>
+                    <p>Location: Solapur, MH</p>
+                    <span class="percentage">Percentage: 90.17%</span>
+                </div>
+                <div class="education-card fade-in">
+                    <h3>Shri Siddhvinayak School</h3>
+                    <p class="degree">Class X (SSC)</p>
+                    <p class="period"><i class="fas fa-calendar"></i> June 2018 - May 2019</p>
+                    <p>Location: Solapur, MH</p>
+                    <span class="percentage">Percentage: 86.20%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card fade-in">
+                    <div class="icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Java Full Stack Development</h3>
+                    <p class="organization">The Kiran Academy</p>
+                    <p class="period">Jan 2025 - June 2025 | Pune, India</p>
+                </div>
+                <div class="certificate-card fade-in">
+                    <div class="icon"><i class="fas fa-certificate"></i></div>
+                    <h3>PHP Full Stack Development</h3>
+                    <p class="organization">Katare Informatics</p>
+                    <p class="period">Feb 2024 - July 2024 | Solapur, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:archanagurav2003@gmail.com">archanagurav2003@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+917387493408">+91 7387493408</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-link"></i>
+                        <div>
+                            <h3>Social Links</h3>
+                            <a href="https://linkedin.com/in/archana-gurav" target="_blank">LinkedIn</a> | 
+                            <a href="https://github.com/Archana0126" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Archana Gurav.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
